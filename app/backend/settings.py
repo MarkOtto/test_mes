@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'rest_framework.authtoken',
+    'corsheaders',
     'messenger',
 ]
 
@@ -53,7 +54,13 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
 ]
+
+CORS_ALLOWED_ORIGINS = ['http://localhost:8000', 'http://localhost:8080']
+
+#CORS_ORIGIN_WHITELIST = (    'localhost:8000',    'localhost:3000',    'localhost:8080',)
 
 ROOT_URLCONF = 'backend.urls'
 
