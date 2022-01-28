@@ -2,20 +2,6 @@ from datetime import datetime
 from django.db import models
 from django.contrib.auth.models import User
 
-from rest_framework.authtoken.models import Token
-
-#users = User.objects.all()
-#for user in users:
-    #if user.id ==1:
-        #token = Token.objects.create(user=user)
-        #print(user)
-        #print(token.key)
-
-#token = Token.objects.create(user="user2")
-#print(token.key)
-#token = Token.objects.create(user="user3")
-#print(token.key)
-
 
 class MMessage(models.Model):
     user_from = models.ForeignKey(

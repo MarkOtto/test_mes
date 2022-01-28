@@ -18,15 +18,6 @@ class MessageSerializer(serializers.ModelSerializer):
         fields = ('id', 'user_from', 'user_to', 'title', 'body', 'sent')
 
 
-class NewUserSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = User
-
-    def save(self):
-        #email = self.validated_data['email']
-        username = self.validated_data['username']
-        password = User.set_password(self.validated_data['password'])
-
 class NewMessageSerializer(serializers.ModelSerializer):
     class Meta:
         model = MMessage
