@@ -31,16 +31,16 @@
    https://www.getpostman.com/collections/d6ac1d2494bce5b29311  
 
 
-2. Enter Django admin
+3. Enter Django admin
    
    superuser credentials:
+
    
-   user1
-   
-   123456aZ
+       user1   
+       123456aZ
 
 
-3. Create New user with login + password
+4. Create New user with login + password
 
 * POST Token = /api/token/ • to get users's token (credentials must be provided in request's body)
 * POST Send = /api/send/ • to send the message (token must be provided in request's header, message details in body)   
