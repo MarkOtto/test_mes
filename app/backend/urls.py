@@ -19,6 +19,6 @@ from django.contrib import admin
 
 urlpatterns = [
     #path('api-auth/', include('rest_framework.urls')),
-    url(r'^admin/', admin.site.urls),
-    url(r'^api/', include('messenger.api.urls')),
+    url(r'^back/admin/', admin.site.urls),
+    url(r'^back/api/', include('messenger.api.urls')),
 ]
