@@ -8,7 +8,7 @@ services:
     volumes:
       - ./app/:/usr/src/app/
       - static_volume:/usr/src/app/staticfiles
-      - vue_volume:/usr/src/app/frontend/test_chat/public
+      - vue_volume:/usr/src/app/frontend/dist
     #ports:
     #  - 8000:8000
     expose:
@@ -20,7 +20,7 @@ services:
     build: ./nginx
     volumes:
       - static_volume:/usr/src/app/staticfiles
-      - vue_volume:/usr/src/app/frontend/test_chat/public
+      - vue_volume:/usr/src/app/frontend/dist
     ports:
       - 80:80
     depends_on:

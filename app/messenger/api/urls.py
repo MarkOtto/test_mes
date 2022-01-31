@@ -11,4 +11,5 @@ urlpatterns = [
     url(r'^inbox/$', views.InboxView.as_view(), name='messages_inbox'),
     url(r'^messages/$', views.MessagesView.as_view(), name='messages_all'),
     url(r'^message/(?P<pk>\d+)/$', views.MessageDetailView.as_view(), name='message_details'),
+    #url(r'^message/$', views.MessageDetailView.as_view(), name='message_details'),
 ]
