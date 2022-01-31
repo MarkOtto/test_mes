@@ -1,0 +1,1 @@
+.b-sidebar{top:80px;max-width:15%}.sidebar-open{margin-left:15%}@media only screen and (max-width:720px){.b-sidebar{display:none}}*{box-sizing:border-box}.container{padding:10px;width:calc(90% - 10px)}.header{z-index:10;margin:auto;top:0;left:0;width:100%;min-height:80px;box-shadow:2px 2px 5px grey}.empty-layout{width:100vw;display:flex;justify-content:center}
